@@ -22,7 +22,9 @@ namespace NodeList
             Link = null;
         }
     }
-
+    /// <summary>
+    /// 单向链表实例
+    /// </summary>
     public class LinkedList
     {
         protected Node header;
