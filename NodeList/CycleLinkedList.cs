@@ -252,6 +252,33 @@ namespace NodeList
         {
             return current.Link == null;
         }
+        /// <summary>
+        /// 约瑟夫环
+        /// </summary>
+        /// <param name="i"></param>
+        /// <param name="m"></param>
+        public void Yueseful(int i,int m)
+        {
+            CycleNode f = theList.GetFirst();
+            CycleNode r = f;
+            for (; i> 0; i--)
+            {
+                r = f;
+                f = f.Link;
+            }
+            while (r.Link != r)
+            {
+                for (int j = 0; j < m; j++)
+                {
+                    r = f;
+                    f = f.Link;
+                }
+                Console.Write(f.Element.ToString() + " ");
+                f = f.Link;
+                r.Link = f;
+            }
+            Console.WriteLine(r.Element.ToString());
+        }
     }
     /// <summary>
     /// 循环链表节点
