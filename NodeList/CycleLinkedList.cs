@@ -21,7 +21,7 @@ namespace NodeList
         {
             //count = 0;
             header = new CycleNode("header");
-            //header.Link = header;
+            header.Link = header;
         }
         /// <summary>
         /// 是否为空
@@ -57,7 +57,7 @@ namespace NodeList
         public void ShowList()
         {
             CycleNode current = header.Link;
-            while (current.Link!= null)
+            while (current.Link != null)
             {
                 Console.WriteLine(current.Element);
                 current = current.Link;
@@ -148,7 +148,7 @@ namespace NodeList
         //    temp = current;
         //    return temp;
         //}
-       
+
         /// <summary>
         /// 获取第一个元素
         /// </summary>
@@ -201,7 +201,7 @@ namespace NodeList
         }
 
         /// <summary>
-        /// 在当前节点钱插入指定元素
+        /// 在当前节点前插入指定元素
         /// </summary>
         /// <param name="element"></param>
         public void InsertBefore(object element)
@@ -213,7 +213,7 @@ namespace NodeList
             }
             else
             {
-                newNode.Link =previous.Link;
+                newNode.Link = previous.Link;
                 previous.Link = newNode;
                 current = newNode;
             }
@@ -257,23 +257,25 @@ namespace NodeList
         /// </summary>
         /// <param name="i"></param>
         /// <param name="m"></param>
-        public void Yueseful(int i,int m)
+        public void Yueseful(int i, int m)
         {
             CycleNode f = theList.GetFirst();
             CycleNode r = f;
-            for (; i> 0; i--)
+            int count = 0;
+            for (; i > 0; i--)
             {
                 r = f;
                 f = f.Link;
             }
             while (r.Link != r)
             {
+                count++;
                 for (int j = 0; j < m; j++)
                 {
                     r = f;
                     f = f.Link;
                 }
-                Console.Write(f.Element.ToString() + " ");
+                Console.Write("第" + count + "次：" + f.Element.ToString() + " ");
                 f = f.Link;
                 r.Link = f;
             }
