@@ -76,7 +76,6 @@ namespace NodeList
             #endregion
 
             iter.Yueseful(1, 2);
-            MyList.ShowList();
             Console.ReadKey();
         }
     }

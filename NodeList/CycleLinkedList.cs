@@ -255,29 +255,29 @@ namespace NodeList
         /// <summary>
         /// 约瑟夫环
         /// </summary>
-        /// <param name="i"></param>
-        /// <param name="m"></param>
-        public void Yueseful(int i, int m)
+        /// <param name="start">开始位置</param>
+        /// <param name="middle">间隔数</param>
+        public void Yueseful(int start, int middle)
         {
-            CycleNode f = theList.GetFirst();
-            CycleNode r = f;
+            CycleNode first = theList.GetFirst();
+            CycleNode r = first;
             int count = 0;
-            for (; i > 0; i--)
+            for (; start > 0; start--)
             {
-                r = f;
-                f = f.Link;
+                r = first;
+                first = first.Link;
             }
             while (r.Link != r)
             {
                 count++;
-                for (int j = 0; j < m; j++)
+                for (int j = 0; j < middle; j++)
                 {
-                    r = f;
-                    f = f.Link;
+                    r = first;
+                    first = first.Link;
                 }
-                Console.Write("第" + count + "次：" + f.Element.ToString() + " ");
-                f = f.Link;
-                r.Link = f;
+                Console.Write("第" + count + "次：" + first.Element.ToString() + " ");
+                first = first.Link;
+                r.Link = first;
             }
             Console.WriteLine(r.Element.ToString());
         }
