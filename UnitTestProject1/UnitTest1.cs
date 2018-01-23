@@ -1,3 +1,4 @@
+using InterviewCore.Sorts;
 using InterviewCore.StackAndQueue;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
@@ -20,6 +21,19 @@ namespace UnitTestProject1
             ReverseStack.Reverse(stack);
             var value2 = stack.Peek();
             Assert.IsTrue(value1 == value2);
+        }
+
+        [TestMethod]
+        public void TestRandomSort()
+        {
+            int[] cards = new int[54];
+            for (int i = 0; i < cards.Length; i++)
+            {
+                cards[i] = i + 1;
+            }
+            NumberSort.RandomSort(ref cards);
+            Assert.IsTrue(cards.Length == cards.Length);
+
         }
     }
 }

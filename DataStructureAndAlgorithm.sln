@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleSort", "SimpleSort\SimpleSort\SimpleSort.csproj", "{94627CA8-1A2B-413D-AEB7-2B4E9EEEE1DC}"
 EndProject
@@ -11,9 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NodeList", "NodeList\NodeLi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bintree", "Bintree\Bintree.csproj", "{0C64F4D1-B1F3-4B6B-9EC5-D9F095B909B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterviewCore", "InterviewCore\InterviewCore.csproj", "{FE4D274D-8327-4F40-9F94-A42E8F339443}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterviewCore", "InterviewCore\InterviewCore.csproj", "{FE4D274D-8327-4F40-9F94-A42E8F339443}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{4AC56493-B4BA-49B9-AB1D-CD5417F4D1D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{4AC56493-B4BA-49B9-AB1D-CD5417F4D1D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CnCalendar", "CnCalendar\CnCalendar.csproj", "{5356B36F-C821-4C6B-B6DA-34DD0EE330B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{4AC56493-B4BA-49B9-AB1D-CD5417F4D1D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AC56493-B4BA-49B9-AB1D-CD5417F4D1D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AC56493-B4BA-49B9-AB1D-CD5417F4D1D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5356B36F-C821-4C6B-B6DA-34DD0EE330B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5356B36F-C821-4C6B-B6DA-34DD0EE330B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5356B36F-C821-4C6B-B6DA-34DD0EE330B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5356B36F-C821-4C6B-B6DA-34DD0EE330B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
