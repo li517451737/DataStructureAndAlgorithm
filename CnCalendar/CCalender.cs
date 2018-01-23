@@ -45,7 +45,7 @@ namespace CnCalendar
         /// <summary>
         /// 地支
         /// </summary>
-        private static string[] arrTerrestrialBranch = { "", "子", "丑", "寅", "卯", "辰", "酉", "午", "未", "申", "酉", "午", "亥" };
+        private static string[] arrTerrestrialBranch = { "", "子", "丑", "寅", "卯", "辰", "巳", "午", "未", "申", "酉", "戌", "亥" };
         /// <summary>
         /// 农历月份名称
         /// </summary>
